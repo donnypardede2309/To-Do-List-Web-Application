@@ -1,0 +1,133 @@
+body {
+    /* agar semua item pada body berada di tengah */
+    text-align: -webkit-center;
+    background-color: #4b0082;
+}
+
+header {
+    background-color: #4b0082;
+    padding: 1px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ff8c00;
+}
+
+header p {
+    color: #ff00ff;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    gap: 10px;
+}
+
+/* styling box input text */
+input[type="text"] {
+    flex: auto;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    background-color: #ff8c00;
+}
+
+/* styling box input date */
+input[type="date"] {
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    background-color: #ff8c00;
+}
+
+/* style placeholder input text todo list */
+input::placeholder {
+    color: #4b0082; 
+    opacity: 1;     
+}
+
+/* style placeholder input date todo list */
+input[type="date"] {
+    color: #4b0082; 
+    opacity: 1;     
+}
+
+/* style untuk tombol submit */
+.table-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    height: 40px;
+}
+
+/* style universal untuk semua tombol */
+button {
+    background-color: #ff00ff;
+    color: #4b0082;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+   
+}
+
+/* style untuk tombol complete dan delete */
+#complete-btn {
+    height: 30px;
+    background-color: #32cd32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2px 2px;
+}
+
+#delete-all-btn {
+    margin-top: 10px;
+    height: 40px;
+}
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 3px solid #ff00ff;
+    background-color:  #ff8c00;
+}
+
+th {
+    border: 1px solid #ff00ff;
+    padding: 3px;
+    text-align: left;
+    color:snow;
+}
+
+td {
+    text-align: center;
+}
+
+p {
+    color: snow
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+footer p {
+    font-size: 12px;
+    color: gray;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <!-- tempat judul halaman website todolist -->
+    <header>
+        <header>
+            <h1>MyToDoList</h1>
+            <p>whatcha gonna do today? :D</p>
+        </header>
+    </header>
+
+    <!-- semua fitur utama ada di dalam main -->
+    <main>
+
+        <section>
+            <form>
+                <input id="input-el" type="text" placeholder="Add your task here!" >
+                <input id="date-el" type="date" >
+                <button id="add-btn" type="button" onclick="validateInput()">ADD</button>
+            </form>
+        </section>
+
+        <section>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="task-table-body">
+                    <p>Your tasks will appear here!</p>
+                        <tr>
+                            <td colspan="4">No task found!</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <div class="table-actions">
+            <button type="button" onclick="deleteCurrentTask()">DELETE</button>
+        </div>
+
+        <section>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="completed-task-table-body">
+                    <p>Your completed tasks will appear here!</p>
+                        <tr>
+                            <td colspan="4">No task found!</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <button id="delete-all-btn" type="button" onclick="deleteAllTasks()">DELETE ALL</button>
+        </section>
+    </main>
+
+    <!-- footer halaman web untuk memberi informasi pembuat web -->
+    <footer>
+        <p>Created by Donny Pardede</p>
+    </footer>
+    <script src="js\script.js"></script>
+</body>
+</html>
